@@ -7,6 +7,7 @@ Do a knights tour with an NxN board.
 def knights_tour( n, initial_move ):
     board = [ [0]*n for i in range(n) ]
     init_board( board, n )
+    board[initial_move[0]][initial_move[1]] = 0
     solution = []
     do_knights_tour( solution, initial_move, board, n )
     return solution
@@ -33,9 +34,12 @@ def do_knights_tour( solution, index, board, n ):
 
 
 if __name__ == "__main__":
-    n = 4
+    n = 5
+    initial_move = (0,0)
     board = [ [0]*n for i in range(n) ]
     pb(init_board( board, n ),n)
     #print best_move( (1,2), board, n)
-    print knights_tour(n, (0,0))
+    sol = knights_tour(n,initial_move )
+    print sol
+    print len(sol)
 

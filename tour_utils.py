@@ -23,7 +23,7 @@ def best_move( index, board, n ):
             continue
         elif best is None:
             best = possible
-        elif val(possible, board) < best:
+        elif val(possible, board) < val(best, board):
             best = possible
         else:
             continue
@@ -64,7 +64,8 @@ def make_move( index, board, n ):
         board[index[0]][index[1]] = 0
     # Decrement all other moves that were counting this sqaure.
     for possible in get_all_valid_moves( index, n ):
-        board[possible[0]][possible[1]] -= 1
+        if board[possible[0]][possible[1]] > 0:
+            board[possible[0]][possible[1]] -= 1
 
 
 
