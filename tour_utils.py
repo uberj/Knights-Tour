@@ -23,12 +23,47 @@ def best_move( index, board, n ):
             continue
         elif best is None:
             best = possible
+            continue
+        elif val(possible, board) == val(best, board):
+            # Tie breaker
+            if abs(possible[0] - possible[1]) < abs(best[0] - best[1]):
+                best = possible
+            continue
         elif val(possible, board) < val(best, board):
             best = possible
         else:
             continue
 
     return best
+
+"""
+HACK HACK HACK.
+If there is only one sqaure left that is still a zero.
+1) Find it
+2) Get the last known move
+3) See if you can move into the last square from the last known move.
+4 a) If you can mark it.
+  b) If you can't don't mark it.
+"""
+def mark_last_move( board, n, last_known ):
+    zeros = 0
+    zero_location = None
+    for i in range(n):
+        for j in range(n):
+            if board[i][j] == 0:
+                zeros += 1
+                zero_location = (i,j)
+    if zeros != 1:
+        return
+    else:
+        if abs( zero_location[0] - last_known[0] ) == 1 and abs( zero_location[1] - last_known[1] ) == 2:
+            board[zero_location[0]][zero_location[1]] = n*n
+        elif abs( zero_location[0] - last_known[0] ) == 2 and abs( zero_location[1] - last_known[1] ) == 1:
+            board[zero_location[0]][zero_location[1]] = n*n
+        else:
+            return
+
+
 
 
 

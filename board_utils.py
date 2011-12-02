@@ -52,5 +52,19 @@ def pb( board, n ):
     print "======================="
     for i in range(n):
         for j in range(n):
-            print board[i][j],
+            if board[i][j] < 10:
+                print str(board[i][j])+" ",
+            else:
+                print board[i][j],
         print
+"""
+Take a board of size n and a solution array (with moves in
+accending order).
+@return A board displaying the move order and where the move was
+on the input board.
+"""
+def solution_to_board( solution, board, n):
+    i = 1
+    for move in solution:
+        board[move[0]][move[1]] = i
+        i += 1

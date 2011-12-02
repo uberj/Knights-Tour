@@ -1,5 +1,6 @@
 from tour_utils import *
 from board_utils import *
+import sys
 import pdb
 """
 Do a knights tour with an NxN board.
@@ -25,7 +26,6 @@ def do_knights_tour( solution, index, board, n ):
         return
     # Move there.
     make_move( best, board, n )
-    pb(board, n)
     # Remember where we are.
     solution.append( best )
     # Recurse.
@@ -34,12 +34,23 @@ def do_knights_tour( solution, index, board, n ):
 
 
 if __name__ == "__main__":
-    n = 5
-    initial_move = (0,0)
+    if len(sys.argv) == 1:
+        print "Usage: python knights_tour.py n i j"
+        print "n = board size (n by n)"
+        print "i j = Initial move in the ith jth index"
+        sys.exit(0)
+    n = int(sys.argv[1])
+    initial_move = (int(sys.argv[2]),int(sys.argv[3]))
     board = [ [0]*n for i in range(n) ]
-    pb(init_board( board, n ),n)
     #print best_move( (1,2), board, n)
-    sol = knights_tour(n,initial_move )
-    print sol
-    print len(sol)
+    sol = [initial_move]+knights_tour(n,initial_move )
+    #pdb.set_trace()
+    print "Board solution"
+    solution_to_board(sol, board, n)
+    mark_last_move( board, n, sol[-1])
+    pb(board , n)
+    if len(sol) == (n*n - 1):
+        sys.exit(0)
+    else:
+        sys.exit(1)
 
