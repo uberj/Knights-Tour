@@ -19,6 +19,7 @@ do_problem2 () {
     echo
 }
 
+echo "Jacques Uber"
 echo "Knights Tour"
 echo "Homework 9"
 echo "CS325"
