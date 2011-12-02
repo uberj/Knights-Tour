@@ -35,6 +35,7 @@ Board solution
 0  20 11 16 5 
 8  3  14 21 10
 0  0  9  4  15
+22
 
 Knights tour with initial move (0, 3)
 Board solution
@@ -44,6 +45,7 @@ Board solution
 8  21 12 17 14
 3  0  15 10 5 
 0  9  4  13 16
+23
 
 Knights tour with initial move (0, 4)
 Board solution
@@ -71,6 +73,7 @@ Board solution
 7  0  11 0  13
 2  0  0  9  4 
 0  8  3  12 0 
+14
 
 Knights tour with initial move (1, 2)
 Board solution
@@ -80,6 +83,7 @@ Board solution
 0  3  0  7  0 
 0  0  5  0  0 
 4  0  0  0  6 
+8
 
 Knights tour with initial move (1, 3)
 Board solution
@@ -98,6 +102,7 @@ Board solution
 4  21 12 17 14
 9  0  15 2  7 
 0  3  8  13 16
+23
 
 Knights tour with initial move (2, 0)
 Board solution
@@ -107,6 +112,7 @@ Board solution
 1  18 11 14 9 
 6  13 16 21 4 
 17 0  5  10 15
+22
 
 Knights tour with initial move (2, 1)
 Board solution
@@ -116,6 +122,7 @@ Board solution
 0  1  0  5  0 
 0  0  7  0  0 
 8  0  0  0  6 
+8
 
 Knights tour with initial move (2, 2)
 Board solution
@@ -125,6 +132,7 @@ Board solution
 3  14 1  18 11
 0  9  16 5  0 
 15 4  0  10 17
+20
 
 Knights tour with initial move (2, 3)
 Board solution
@@ -134,6 +142,7 @@ Board solution
 0  5  0  1  0 
 0  0  3  0  0 
 4  0  0  0  2 
+8
 
 Knights tour with initial move (2, 4)
 Board solution
@@ -143,6 +152,7 @@ Board solution
 9  14 11 18 1 
 22 3  20 7  12
 0  8  0  2  19
+22
 
 Knights tour with initial move (3, 0)
 Board solution
@@ -152,6 +162,7 @@ Board solution
 14 17 12 21 4 
 1  6  19 10 23
 18 11 22 5  20
+23
 
 Knights tour with initial move (3, 1)
 Board solution
@@ -170,6 +181,7 @@ Board solution
 0  7  0  3  0 
 0  0  1  0  0 
 8  0  0  0  2 
+8
 
 Knights tour with initial move (3, 3)
 Board solution
@@ -179,6 +191,7 @@ Board solution
 13 0  11 0  7 
 10 5  0  1  0 
 0  14 0  6  0 
+14
 
 Knights tour with initial move (3, 4)
 Board solution
@@ -206,6 +219,7 @@ Board solution
 14 17 12 21 8 
 11 6  19 2  23
 18 1  22 7  20
+23
 
 Knights tour with initial move (4, 2)
 Board solution
@@ -215,6 +229,7 @@ Board solution
 5  16 11 20 0 
 22 13 18 7  2 
 17 6  1  12 19
+22
 
 Knights tour with initial move (4, 3)
 Board solution
@@ -234,7 +249,7 @@ Board solution
 10 21 8  17 12
 7  16 11 22 1 
 
-There were 10 successful tours out of 5 attempts.
+There were 10 successful tours out of 25 attempts.
 
 ====================================================
 ====================================================
@@ -280,7 +295,7 @@ Board solution
 19 12 35 4  21 14
 34 3  20 13 28 5 
 
-There were 1 successful tours out of 6 attempts.
+There were 4 successful tours out of 4 attempts.
 
 ====================================================
 ====================================================
@@ -334,5 +349,5 @@ Board solution
 17 20 5  34 43 56 7  32
 4  35 18 55 6  33 28 57
 
-There were 4 successful tours out of 8 attempts.
+There were 4 successful tours out of 4 attempts.
 

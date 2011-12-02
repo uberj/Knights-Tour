@@ -15,7 +15,7 @@ do_problem2 () {
             echo
         done
     done
-    echo "There were $solutions successful tours out of $1 attempts."
+    echo "There were $solutions successful tours out of $(($2*$3)) attempts."
     echo
 }
 
