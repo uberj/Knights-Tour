@@ -19,6 +19,12 @@ do_problem2 () {
     echo
 }
 
+echo "Knights Tour"
+echo "Homework 9"
+echo "CS325"
+echo "12/1/2011"
+echo
+echo
 echo "===================================================="
 echo "===================================================="
 echo "Problem 2 and 3 . Test your program by using as starting square each of the 25 squares on a 5 by 5 gameboard. How many tours did it find?"
